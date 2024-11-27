@@ -113,6 +113,8 @@ nav {
   border: 1px solid var(--primary-dark);
   border-radius: 10px;
   color: var(--primary-color1);
+  line-height: 1em;
+  text-align: center;
 }
 
 .typeSelect option {
@@ -167,6 +169,7 @@ nav {
   width: 100%;
   border-radius: 10px;
   border: 2px solid var(--primary-cyan);
+  aspect-ratio: 1/1;
 }
 
 .streamer {
@@ -190,6 +193,7 @@ nav {
   background-color: var(--primary-color1);
   cursor: pointer;
   transition: all 0.2s ease;
+  text-transform: uppercase;
 }
 
 .addbtn:hover {
@@ -220,6 +224,10 @@ nav {
   text-decoration: none;
 }
 
+.game-profile img {
+  aspect-ratio: 1/1;
+}
+
 .game-profile p {
   color: var(--primary-dark);
   justify-self: start;
@@ -247,6 +255,7 @@ nav {
 
 .stream-thumbnail {
   display: block;
+  aspect-ratio: 16 / 9;
 }
 
 .stream-thumbnail-wrapper {
@@ -256,6 +265,7 @@ nav {
   justify-self: center;
   align-self: center;
   z-index: -1;
+  aspect-ratio: 16 / 9;
 }
 
 .stream-thumbnail-wrapper::before {
@@ -684,10 +694,17 @@ nav {
 
   .searchBox {
     width: 100%;
+    font-size: 1.1rem;
   }
 
   .typeSelect {
     width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .typeSelect option {
+    text-align: start;
+    font-size: 1.1rem;
   }
 
   .searchBtn {
@@ -831,6 +848,19 @@ nav {
     align-items: start;
   }
 
+  .searchBox {
+    font-size: 0.7rem;
+  }
+
+  .typeSelect {
+    font-size: 0.7rem;
+    align-self: center;
+  }
+
+  .typeSelect option {
+    font-size: 0.7rem;
+  }
+
   .streamer-box {
     gap: 0.7rem;
   }
@@ -920,6 +950,11 @@ nav {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     padding: 0 var(--pd-size-sm);
+  }
+
+  /* popular stream */
+  .top-stream-header {
+    width: 90%;
   }
 }
 

@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 
+//コンポーネントのインポート
 import BoxWrapper from "../../components/common/BoxWrapper";
 import NavBar from "../../components/NavBar/NavBar";
 import PopularStreams from "../../components/Popular/PopularStreams";

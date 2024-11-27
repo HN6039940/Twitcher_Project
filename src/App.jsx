@@ -1,5 +1,3 @@
-import "./App.css";
-
 // page components
 import HomeLayout from "./pages/Home/HomeLayout";
 import GameSearch from "./pages/Games/GamesSearchPage";

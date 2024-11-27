@@ -1,12 +1,15 @@
+// ライブラリのインポート
+import { useQuery } from "@tanstack/react-query";
+import { useSelector, useDispatch } from "react-redux";
+
+// スライス 関数のインポート
+import { getChannel } from "../../axios/axios";
+import { setStreamers, setPagination } from "../../store/slice/streamerSlice";
+
+// コンポーネントのインポート
 import SearchResult from "../../components/common/SearchResult";
 import StreamerProfile from "../../components/Profile/StreamerProfile";
 import Loading from "../../components/Loading/Loading";
-
-import { useQuery } from "@tanstack/react-query";
-import { getChannel } from "../../axios/axios";
-
-import { useSelector, useDispatch } from "react-redux";
-import { setStreamers, setPagination } from "../../store/slice/streamerSlice";
 
 const StreamerSearch = () => {
   const dispatch = useDispatch();

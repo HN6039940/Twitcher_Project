@@ -21,9 +21,11 @@ const GameStreamProfile = ({ stream }) => {
     started_at,
     thumbnail_url,
   } = stream;
+  // すでに追加されているかどうかを判定
   let isAdd = streamsData.some((data) => data.user_id === user_id);
   const resizeArt_url = thumbnail_url.replace("{width}x{height}", `250x150`);
 
+  // ストリームを追加するか削除するかを判定 またストリームを追加する際にはキーを生成する。
   const handleAddStream = () => {
     const isExist = streamsData.some((data) => data.user_id === user_id);
 
@@ -38,6 +40,8 @@ const GameStreamProfile = ({ stream }) => {
       isAdd = false;
     }
   };
+
+  // isAddがtrueかつstreamsDataの長さが4以上の場合は削除ボタンを押せるようにする
 
   return (
     <section className="gamestream-container">

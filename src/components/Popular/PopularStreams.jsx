@@ -1,10 +1,14 @@
+// ライブラリ・パッケージのインポート
 import { useQuery } from "@tanstack/react-query";
 import { useSelector, useDispatch } from "react-redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// 関数・コンポーネントのインポート
 import { getPopularStream } from "../../axios/axios";
 import { setTopStreams } from "../../store/slice/topStreamSlice";
 
+// コンポーネントのインポート
 import PopularStream from "./PopularStream";
 import Loading from "../Loading/Loading";
 

@@ -9,6 +9,8 @@ const topStreamSlice = createSlice({
   initialState: initlialState,
   reducers: {
     setTopStreams: (state, action) => {
+      // streamのAPIから取得したデータの場合channelを探すAPIで必要だったプロパティ名の変換は不要なので、そのままstateに格納できる。
+      // しかし、ユーザのプロフィール画像を利用するには、topStreamsInJpのデータにtargetStreamDataのprofile_image_urlの値を結合する必要がある。
       const [topStreamDataInJp, targetStreamData] = action.payload;
       const topStreamData = topStreamDataInJp.data.map((stream) => {
         return {

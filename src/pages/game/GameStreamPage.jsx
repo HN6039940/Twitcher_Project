@@ -1,22 +1,27 @@
+// ライブラリのインポート
 import { useQuery } from "@tanstack/react-query";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
+// 関数 スライスのインポート
 import { getGameStream } from "../../axios/axios";
 import {
   setGameStreams,
   setSearchGameId,
 } from "../../store/slice/gameStreamSlice";
 
+// コンポーネントのインポート
 import GameStreamProfile from "../../components/Profile/GameStreamProfile";
 import Loading from "../../components/Loading/Loading";
+
 const GameStreamPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { gameStreams } = useSelector((state) => state.gameStream);
   const { id } = useParams();
 
+  // 読み込み時urlにidがない場合はトップページにリダイレクト
   useEffect(() => {
     if (!id) {
       navigate(`/`);

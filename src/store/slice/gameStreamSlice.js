@@ -29,7 +29,6 @@ const gameStreamsSlice = createSlice({
       });
 
       state.gameStreams = newStreamsArray;
-      // setSearchGameName(action.payload.data[0].game_name);
     },
     setSearchGameId: (state, action) => {
       state.searchGameId = action.payload;

@@ -1,18 +1,22 @@
+// ライブラリ
 import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-
+// redux
 import { setSearchType } from "../../store/slice/searchSlice";
 import { setStreamerSearchWord } from "../../store/slice/streamerSlice";
 import { setGamesSearchWord } from "../../store/slice/gamesSlice";
-
+// コンポーネント
 import OverLay from "../OverLay/OverLay";
 
 const NavBar = () => {
   const params = useLocation();
+  // overlayの表示非表示を管理
   const [isOpen, setIsOpen] = useState(false);
+  // 検索ワードを管理
   const [search, setSearch] = useState("");
   const { searchType } = useSelector((state) => state.search);
+  // ストリームの数を取得する
   const { streamsData } = useSelector((state) => state.setStream);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -20,7 +24,13 @@ const NavBar = () => {
   // ページが読み込まれた際にsearchTypeを変更
   // /gamesの場合はgamesに、/streamersの場合はstreamersに変更
   // それ以外の場合はstreamersに変更  (初期値)
+
   useEffect(() => {
+    document.body.style.visibility = "hidden";
+    document.fonts.ready.then(function () {
+      // フォントの読み込みが完了した後に実行するコード
+      document.body.style.visibility = "visible";
+    });
     if (params.pathname === "/games") {
       dispatch(setSearchType("games"));
     }
@@ -50,7 +60,8 @@ const NavBar = () => {
     }, 0);
   };
 
-  // 送信された際searchTypeによって検索結果の保存先をstreamerかgameに変更
+  // 送信された際保存したsearchTypeの値によって検索結果の保存先をstreamerかgameに変更
+  // またその際にnavigateで画面が遷移する
   const onSubmit = (e) => {
     e.preventDefault();
     if (search === "") return;

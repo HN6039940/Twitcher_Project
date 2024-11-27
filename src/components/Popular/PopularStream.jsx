@@ -1,10 +1,13 @@
+// ライブラリのインポート
 import { useDispatch, useSelector } from "react-redux";
+// スライス Reducerのインポート
 import {
   setStreamData,
   deleteStreamData,
   createStreamKeys,
   deleteStreamKeys,
 } from "../../store/slice/setStreamSlice";
+
 const PopularStream = ({ stream }) => {
   const { streamsData } = useSelector((state) => state.setStream);
   const dispatch = useDispatch();
@@ -20,8 +23,11 @@ const PopularStream = ({ stream }) => {
     user_id,
   } = stream;
 
+  // 配信者が追加されているかどうかをスライスの値と作成されたコンポーネントの値と比較して判定
   const isAdded = streamsData.some((data) => data.user_id === user_id);
+  // 開始時間を日本時間に変換 yyyy/mm/dd hh:mm:ssの形式になる
   const localizedDate = new Date(started_at).toLocaleString("ja-JP");
+  // サムネイル画像のサイズを変更
   const resizeImage = thumbnail_url.replace("{width}x{height}", "600x300");
 
   const handleAddStream = () => {

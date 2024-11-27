@@ -11,6 +11,9 @@ const streamerSlice = createSlice({
   initialState: initialState,
   reducers: {
     setStreamers: (state, action) => {
+      // 配信者情報はプロパティ名が異なるため、setStreamSliceで使用するプロパティ名にあらかじめ変換する必要がある
+      // broadcaster_login-> user_login
+      // id -> user_id
       const searchStreamerResult = action.payload.map((streamer) => {
         const {
           display_name,

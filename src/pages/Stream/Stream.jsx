@@ -1,5 +1,7 @@
+// ライブラリのインポート
 import { useSelector } from "react-redux";
 import { TwitchEmbed } from "react-twitch-embed";
+
 const Stream = () => {
   const { streamsKeys } = useSelector((state) => state.setStream);
   return (
@@ -14,12 +16,13 @@ const Stream = () => {
           return (
             <div key={index} style={{ marginBottom: "2rem" }}>
               <h3>{key}が配信中...📡</h3>
+
               <TwitchEmbed
                 channel={key}
                 id={String(index + 1)}
                 width={"100%"}
                 height={"600px"}
-                withChat={true}
+                withChat={false}
               />
             </div>
           );
