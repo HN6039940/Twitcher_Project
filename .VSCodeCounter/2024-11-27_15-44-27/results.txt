@@ -1,0 +1,94 @@
+Date : 2024-11-27 15:44:27
+Directory : c:\Users\hirok\Desktop\Twitcher\twitcherJS
+Total : 39 files,  6339 codes, 96 comments, 342 blanks, all 6777 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          2 |      4,316 |          0 |          2 |      4,318 |
+| JavaScript |         31 |      1,103 |         69 |        150 |      1,322 |
+| CSS        |          1 |        893 |         27 |        185 |      1,105 |
+| HTML       |          1 |         19 |          0 |          1 |         20 |
+| Markdown   |          1 |          5 |          0 |          4 |          9 |
+| XML        |          3 |          3 |          0 |          0 |          3 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                       |         39 |      6,339 |         96 |        342 |      6,777 |
+| . (Files)                                                                               |          6 |      4,382 |          1 |         11 |      4,394 |
+| public                                                                                  |          1 |          1 |          0 |          0 |          1 |
+| src                                                                                     |         32 |      1,956 |         95 |        331 |      2,382 |
+| src (Files)                                                                             |          3 |        956 |         29 |        193 |      1,178 |
+| src\assets                                                                              |          2 |          2 |          0 |          0 |          2 |
+| src\assets (Files)                                                                      |          1 |          1 |          0 |          0 |          1 |
+| src\assets\image                                                                        |          1 |          1 |          0 |          0 |          1 |
+| src\axios                                                                               |          1 |         88 |         14 |         13 |        115 |
+| src\components                                                                          |         12 |        431 |         26 |         58 |        515 |
+| src\components\Loading                                                                  |          1 |          8 |          0 |          2 |         10 |
+| src\components\NavBar                                                                   |          1 |         92 |         15 |         10 |        117 |
+| src\components\OverLay                                                                  |          2 |         52 |          0 |          8 |         60 |
+| src\components\Popular                                                                  |          2 |        122 |          8 |         14 |        144 |
+| src\components\Profile                                                                  |          3 |        145 |          3 |         18 |        166 |
+| src\components\common                                                                   |          3 |         12 |          0 |          6 |         18 |
+| src\pages                                                                               |          6 |        216 |         15 |         33 |        264 |
+| src\pages\Error                                                                         |          1 |         24 |          1 |          4 |         29 |
+| src\pages\Games                                                                         |          1 |         55 |          5 |          6 |         66 |
+| src\pages\Home                                                                          |          1 |         16 |          1 |          4 |         21 |
+| src\pages\Stream                                                                        |          1 |         31 |          1 |          4 |         36 |
+| src\pages\Streamer                                                                      |          1 |         42 |          3 |          8 |         53 |
+| src\pages\game                                                                          |          1 |         48 |          4 |          7 |         59 |
+| src\store                                                                               |          7 |        211 |         11 |         31 |        253 |
+| src\store (Files)                                                                       |          1 |         17 |          0 |          3 |         20 |
+| src\store\slice                                                                         |          6 |        194 |         11 |         28 |        233 |
+| src\util                                                                                |          1 |         52 |          0 |          3 |         55 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\README.md                                    | Markdown   |          5 |          0 |          4 |          9 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\eslint.config.js                             | JavaScript |         37 |          0 |          2 |         39 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\index.html                                   | HTML       |         19 |          0 |          1 |         20 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\package-lock.json                            | JSON       |      4,281 |          0 |          1 |      4,282 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\package.json                                 | JSON       |         35 |          0 |          1 |         36 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\public\vite.svg                              | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\App.jsx                                  | JavaScript |         37 |          2 |          5 |         44 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\assets\image\NotResult.svg               | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\assets\react.svg                         | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\axios\axios.js                           | JavaScript |         88 |         14 |         13 |        115 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\Loading\Loading.jsx           | JavaScript |          8 |          0 |          2 |         10 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\NavBar\NavBar.jsx             | JavaScript |         92 |         15 |         10 |        117 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\OverLay\AddedStream.jsx       | JavaScript |         29 |          0 |          5 |         34 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\OverLay\OverLay.jsx           | JavaScript |         23 |          0 |          3 |         26 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\Popular\PopularStream.jsx     | JavaScript |         69 |          5 |          7 |         81 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\Popular\PopularStreams.jsx    | JavaScript |         53 |          3 |          7 |         63 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\Profile\GameStreamProfile.jsx | JavaScript |         71 |          3 |          8 |         82 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\Profile\GamesProfile.jsx      | JavaScript |         14 |          0 |          3 |         17 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\Profile\StreamerProfile.jsx   | JavaScript |         60 |          0 |          7 |         67 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\common\BoxWrapper.jsx         | JavaScript |          4 |          0 |          2 |          6 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\common\GameBox.jsx            | JavaScript |          4 |          0 |          2 |          6 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\components\common\SearchResult.jsx       | JavaScript |          4 |          0 |          2 |          6 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\index.css                                | CSS        |        893 |         27 |        185 |      1,105 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\main.jsx                                 | JavaScript |         26 |          0 |          3 |         29 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\pages\Error\Error.jsx                    | JavaScript |         24 |          1 |          4 |         29 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\pages\Games\GamesSearchPage.jsx          | JavaScript |         55 |          5 |          6 |         66 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\pages\Home\HomeLayout.jsx                | JavaScript |         16 |          1 |          4 |         21 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\pages\Stream\Stream.jsx                  | JavaScript |         31 |          1 |          4 |         36 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\pages\Streamer\StreamerSearchPage.jsx    | JavaScript |         42 |          3 |          8 |         53 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\pages\game\GameStreamPage.jsx            | JavaScript |         48 |          4 |          7 |         59 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\slice\gameStreamSlice.js           | JavaScript |         40 |          0 |          6 |         46 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\slice\gamesSlice.js                | JavaScript |         24 |          0 |          4 |         28 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\slice\searchSlice.js               | JavaScript |         19 |          0 |          4 |         23 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\slice\setStreamSlice.js            | JavaScript |         41 |          6 |          5 |         52 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\slice\streamerSlice.js             | JavaScript |         46 |          3 |          4 |         53 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\slice\topStreamSlice.js            | JavaScript |         24 |          2 |          5 |         31 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\store\store.js                           | JavaScript |         17 |          0 |          3 |         20 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\src\util\dummyData.js                        | JavaScript |         52 |          0 |          3 |         55 |
+| c:\Users\hirok\Desktop\Twitcher\twitcherJS\vite.config.js                               | JavaScript |          5 |          1 |          2 |          8 |
+| Total                                                                                   |            |      6,339 |         96 |        342 |      6,777 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
